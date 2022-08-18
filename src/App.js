@@ -24,7 +24,9 @@ function App() {
     var requestOptions = {
       method: "GET",
     };
-    var url = "http://localhost:3000/customer/all";
+    //var url = "http://localhost:3000/customer/all";
+    var url = "https://nus-backend.herokuapp.com/customer/all";
+    
     console.log(url);
     fetch(url, requestOptions)
       .then((response) => response.json())
