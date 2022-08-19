@@ -1,10 +1,10 @@
 # Your workflow name.
 name: Deploy to heroku.
 
-# Run workflow on every push to master branch. 
+# Run workflow on every push to master branch.
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 # Your workflows jobs.
 jobs:
@@ -45,7 +45,7 @@ jobs:
           dockerfile_name: Dockerfile
 
           # (Optional, default: "")
-          # Additional options of docker build command. 
+          # Additional options of docker build command.
           docker_options: "--no-cache"
 
           # (Optional, default: "web")
@@ -53,7 +53,3 @@ jobs:
           # By default, this argument is set to "web".
           # For more information look at https://devcenter.heroku.com/articles/process-model
           process_type: web
-          
-            
-          
-### ⬆ IMPORTANT PART ⬆ ###
